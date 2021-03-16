@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/insidemearts/static/css/main.07e4ef9b.chunk.css",
+    "main.js": "/insidemearts/static/js/main.8c8fed72.chunk.js",
+    "main.js.map": "/insidemearts/static/js/main.8c8fed72.chunk.js.map",
+    "runtime-main.js": "/insidemearts/static/js/runtime-main.1dd5f6af.js",
+    "runtime-main.js.map": "/insidemearts/static/js/runtime-main.1dd5f6af.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/insidemearts/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0959e28d.chunk.js": "/insidemearts/static/js/2.0959e28d.chunk.js",
+    "static/js/2.0959e28d.chunk.js.map": "/insidemearts/static/js/2.0959e28d.chunk.js.map",
+    "static/js/3.f0b84f88.chunk.js": "/insidemearts/static/js/3.f0b84f88.chunk.js",
+    "static/js/3.f0b84f88.chunk.js.map": "/insidemearts/static/js/3.f0b84f88.chunk.js.map",
+    "index.html": "/insidemearts/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/insidemearts/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.07e4ef9b.chunk.css.map": "/insidemearts/static/css/main.07e4ef9b.chunk.css.map",
+    "static/js/2.0959e28d.chunk.js.LICENSE.txt": "/insidemearts/static/js/2.0959e28d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1dd5f6af.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0959e28d.chunk.js",
+    "static/css/main.07e4ef9b.chunk.css",
+    "static/js/main.8c8fed72.chunk.js"
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/insidemearts/static/css/main.07e4ef9b.chunk.css",
-    "main.js": "/insidemearts/static/js/main.8c8fed72.chunk.js",
-    "main.js.map": "/insidemearts/static/js/main.8c8fed72.chunk.js.map",
+    "main.js": "/insidemearts/static/js/main.994a8fc5.chunk.js",
+    "main.js.map": "/insidemearts/static/js/main.994a8fc5.chunk.js.map",
     "runtime-main.js": "/insidemearts/static/js/runtime-main.1dd5f6af.js",
     "runtime-main.js.map": "/insidemearts/static/js/runtime-main.1dd5f6af.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/insidemearts/static/css/2.4c97ca4f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.0959e28d.chunk.js",
     "static/css/main.07e4ef9b.chunk.css",
-    "static/js/main.8c8fed72.chunk.js"
+    "static/js/main.994a8fc5.chunk.js"
   ]
 }

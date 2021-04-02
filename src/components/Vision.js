@@ -24,7 +24,12 @@ const Vision = () => {
               performance on standardized tests. Unfortunately, drawing as a
               subject for students with visual impairment has not been
               incorporated in India. But we hope to change that. Once the
-              subject is established.
+              subject is established. in India, the talented children will be 
+              appointed as paid volunteers and teachers. In this way, the blind children will get employment. 
+              We hope a circle of self-sufficiency is established. 
+              Who better to teach the blind to draw than the blind who know how to draw.
+              The drawing will help them to learn and adopt professional skills in a better way. 
+              Later we can introduce them different forms of art and skills to earn their livelihood.
             </p>
           </Col>
         </Row>

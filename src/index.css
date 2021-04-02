@@ -13,8 +13,9 @@ body {
 }
 
 .container{
-  width: 80%;
+  max-width: '100%';
 }
+
 
 
 .navBar{
@@ -24,26 +25,18 @@ body {
   margin-right: auto;
 }
 
-.navLink {
+.navLink, .navLink:hover {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
   color: grey;
   margin: 40px;
-}
-
-.activeNavLink {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: grey;
-  margin: 40px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 /* first section height conpensate navbar */
 .sectionOne {    
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -61,4 +54,58 @@ body {
 .heading{
   font-family: 'Quicksand', sans-serif;
   font-size: 70px;
+}
+
+.sectionHeading{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 5.9vh;
+  color: grey; 
+  text-align: left;
+}
+
+.sectionContent{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vmin;
+  color: grey; 
+  text-align: left;
+}
+
+.Loading {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #444;
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Feed {
+  margin: auto;
+  padding: 2% 1%;
+}
+
+.Feed a img {
+  margin: 1% 1%;
+  width: 23%;
+  float: left;
+  animation: fadein 3s;
+  border-radius: 10px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

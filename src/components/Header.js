@@ -26,27 +26,27 @@ const Header = () => {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"bold" }} to="/initiative">Our Initiative</NavLink>
+                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/initiative">Our Initiative</NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"bold" }} to="/media">Media</NavLink>
+                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/media">Media</NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"bold" }} to="/donate">Donate</NavLink>
+                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/donate">Donate</NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"bold" }} to="/volunteer">Get Involved</NavLink>
+                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/volunteer">Get Involved</NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"bold" }} to="/contact">Contact Us</NavLink>
+                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/contact">Contact Us</NavLink>
               </Nav.Link>
             </Nav.Item>
             {/* <Nav.Item>

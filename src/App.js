@@ -64,7 +64,7 @@ function Home() {
     <div>
       <Row className="sectionOne quoteSection">
         <Quote />
-        <Button variant="outline-secondary" href="#details" className="mx-auto" style={{width:"10%", marginTop:"20%", bottom:"5%"}}>Know More.</Button>{' '}
+        <Button variant="outline-secondary" href="#details" className="mx-auto" style={{minWidth:"20%", marginTop:"20%", bottom:"5%"}}>Know More</Button>{' '}
       </Row>
       <Row className="section" id="details">
         <ImageSection

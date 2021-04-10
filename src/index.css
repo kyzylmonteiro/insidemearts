@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway&display=swap');
 
 /* 
 font-family: 'Quicksand', sans-serif;
@@ -29,7 +29,7 @@ body {
 .navLink, .navLink:hover {
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: grey;
   margin: 40px;
   text-decoration: none;

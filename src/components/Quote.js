@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const Images = () => {
+const Quote = () => {
   return (
     <div>
       <h2 className="heading">
@@ -14,7 +14,7 @@ const Images = () => {
               )
               .pauseFor(500)
               .deleteAll()
-              .typeString("Welcome to Inside Me!")
+              .typeString("I don't see dreams, I hear them. <br/><br/> ~Anjali")
               .start();
           }}
         />
@@ -36,4 +36,4 @@ const spanStyle = {
   padding: 10,
 };
 
-export default Images;
+export default Quote;

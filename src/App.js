@@ -1,22 +1,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from "react-bootstrap";
 import Header from "./components/Header.js";
-import Images from "./components/Images.js";
+import Quote from "./components/Quote.js";
 import ImageSection from "./components/ImageSection.js";
-import {Container, Row, Column} from "react-bootstrap";
-import Gallery from "react-photo-gallery";
-import { photos } from "./components/photos";
 import Feed from "react-instagram-authless-feed";
+import Gallery from "react-photo-gallery";
+import { data } from "./data";
+import { photos } from "./components/photos";
+import { latestPhotos } from "./components/latestPhotos";
+import { ErrorBoundary } from "react-error-boundary";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
+import Button from 'react-bootstrap/Button'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-export default function App() {
+function App() {
   return (
-    <Router  basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Container>
         {/* <nav>
           <ul>
@@ -61,67 +60,107 @@ export default function App() {
 }
 
 function Home() {
-  return <div>
-  <Row className="sectionOne">
-    <Images />
-  </Row>
-  <Row className="section">
-    <ImageSection imagesrc="" heading="Our Vision" content="India is home to the largest number of visually impaired people in the world. Out of 45 million blind people across the globe, over 15 million are from India. Delhi has 19 schools and centers serving the blind. Our mission is to cover remote and deprived schools of India. The blind is living a mundane life based on donation and sympathy. It is our objective to provide empowerment and a sense of being so that they can cope in the world outside these premises."/>
-  </Row>
-  <Row className="section">
-    <Row className="justify-content-md-center">
-    <h2 className="sectionHeading">Our Latest Updates</h2>
-    {/* <Feed userName="insidemearts" limit="4" className="Feed" classNameLoading="Loading" /> */}
-    </Row>
-  </Row>
-</div>;
+  return (
+    <div>
+      <Row className="sectionOne quoteSection">
+        <Quote />
+        <Button variant="outline-secondary" href="#details" className="mx-auto" style={{width:"10%", marginTop:"20%", bottom:"5%"}}>Know More.</Button>{' '}
+      </Row>
+      <Row className="section" id="details">
+        <ImageSection
+          imagesrc={data[0].image}
+          heading={data[0].heading}
+          content={data[0].content}
+        />
+      </Row>
+      <Row className="section">
+      <Fade up distance="20%" duration={1000}>
+          <h2 className="sectionHeading">Our Latest Updates</h2>
+          <Gallery photos={latestPhotos} />
+      </Fade>
+          {/* <ErrorBoundary>
+              <Feed
+                userName="insidemearts"
+                className="Feed"
+                classNameLoading="Loading"
+                limit="4"
+              />
+            </ErrorBoundary> */}
+      </Row>
+    </div>
+  );
 }
 // https://github.com/kyzylmonteiro/ninjaJ2W/blob/efd63cf81152518a1036320bbb375fde7e5620f5/src/CardSection.js#L90
 
 function Initiative() {
-  return <div>
-    <div className="sectionOne">
-    <ImageSection imagesrc="" heading="Our Initiative" content="Our mission is to cover remote and deprived schools of India. The blind is living a mundane life based on donation and sympathy. It is our objective to provide empowerment and a sense of being so that they can cope in the world outside these premises.
-
-Inside Me teaches drawing to empower these youth. Increased exposure to drawing will help the blind understand and represent space concept and symbolic relations. Visual art or drawing improves both academic achievement and performance on standardized tests.
-
-Unfortunately, drawing as a subject for students with visual impairment has not been incorporated in India. But we hope to change that."/>
+  return (
+    <div>
+      <div className="sectionOne">
+        <ImageSection
+          imagesrc={data[1].image}
+          heading={data[1].heading}
+          content={data[1].content}
+        />
+      </div>
     </div>
-  </div>;
+  );
 }
 
 function Media() {
-  return <div>
+  return (
     <div>
-      <h2 className="sectionHeading" >Media</h2>
-      <Gallery photos={photos} />
+      <div>
+      <Fade up distance="20%" duration={1000} delay={300}>
+        <h2 className="sectionHeading">Media</h2>
+      </Fade>
+      <Fade up distance="5%" duration={1000} delay={300}>
+        <Gallery photos={photos} />
+        </Fade>
+      </div>
     </div>
-  </div>;
+  );
 }
 
 function Donate() {
-  return <div>
-    <div className="sectionOne">
-      <ImageSection imagesrc="" heading="Donate" content="In order to donate to our cause, please write to us at insidemearts@gmail.com"/>
+  return (
+    <div>
+      <div className="sectionOne">
+        <ImageSection
+          imagesrc={data[2].image}
+          heading={data[2].heading}
+          content={data[2].content}
+        />
+      </div>
     </div>
-  </div>;
+  );
 }
 
 function Contact() {
-  return <div>
-    <div className="sectionOne">
-      <h2 className="heading">Contact</h2>
+  return (
+    <div>
+      <div className="sectionOne">
+      <ImageSection
+          imagesrc={data[4].image}
+          heading={data[4].heading}
+          content={data[4].content}
+        />
+      </div>
     </div>
-  </div>;
+  );
 }
 
 function Volunteer() {
-  return <div>
-    <div className="sectionOne">
-      <ImageSection imagesrc="" heading="Volunteer with us" content="At Inside Me, we are always looking for enthusiastic and passionate people from all walks of life to give their time and energy to our budding talents. 
-
-We currently teach drawing at IFB, Amar Colony, Lajpat Nagar and Janta Adarsh Andh Vidyalaya, Sadiq Nagar. 
-Write to us at insidemearts@gmail.com to become a part of our initiative. "/>
+  return (
+    <div>
+      <div className="sectionOne">
+        <ImageSection
+          imagesrc={data[3].image}
+          heading={data[3].heading}
+          content={data[3].content}
+        />
+      </div>
     </div>
-  </div>;
+  );
 }
+
+export default App;

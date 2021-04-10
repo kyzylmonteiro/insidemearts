@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
 
 /* 
-font-family: 'Montserrat', sans-serif;
 font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
   */
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 .container{
@@ -34,17 +35,21 @@ body {
   text-decoration: none;
 }
 
-/* first section height conpensate navbar */
+/* first section height compensate navbar */
 .sectionOne {    
   height: 80vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
+.quoteSection {
+  justify-content: center;
+}
+
 .section {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,19 +57,19 @@ body {
 }
 
 .heading{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 70px;
 }
 
 .sectionHeading{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 5.9vh;
   color: grey; 
   text-align: left;
 }
 
 .sectionContent{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2vmin;
   color: grey; 
   text-align: left;

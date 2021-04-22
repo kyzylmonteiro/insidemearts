@@ -5,19 +5,26 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif;
   */
 
+html{
+  scroll-behavior: smooth;
+  background-color: #222222;
+}
+
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
 }
 
 .container{
   max-width: '100%';
 }
 
-
+#root{
+  background-color: #222222;
+  color: white;
+}
 
 .navBar{
   margin-top: 7vh;
@@ -30,7 +37,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
-  color: grey;
+  color: white;
   margin: 40px;
   text-decoration: none;
 }
@@ -64,14 +71,14 @@ body {
 .sectionHeading{
   font-family: 'Raleway', sans-serif;
   font-size: 5.9vh;
-  color: grey; 
+  /* color: grey;  */
   text-align: left;
 }
 
 .sectionContent{
   font-family: 'Quicksand', sans-serif;
   font-size: 2vmin;
-  color: grey; 
+  /* color: grey;  */
   text-align: left;
 }
 

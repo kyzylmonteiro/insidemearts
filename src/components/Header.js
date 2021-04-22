@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import logo from './logo.png';
+import logo from "./logo.png";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-        {/* <Navbar.Brand href="/">
+          {/* <Navbar.Brand href="/">
           <img
             src={logo} 
             alt="Logo"
@@ -21,32 +21,64 @@ const Header = () => {
           <Nav className="mx-auto parent">
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" to="/">Inside Me</NavLink>
+                <NavLink className="navLink" to="/">
+                  Inside Me
+                </NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/initiative">Our Initiative</NavLink>
+                <NavLink
+                  className="navLink"
+                  activeStyle={{ fontWeight: "600" }}
+                  to="/initiative"
+                >
+                  Our Initiative
+                </NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/media">Media</NavLink>
+                <NavLink
+                  className="navLink"
+                  activeStyle={{ fontWeight: "600" }}
+                  to="/media"
+                >
+                  Media
+                </NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/donate">Donate</NavLink>
+                <NavLink
+                  className="navLink"
+                  activeStyle={{ fontWeight: "600" }}
+                  to="/donate"
+                >
+                  Donate
+                </NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/volunteer">Get Involved</NavLink>
+                <NavLink
+                  className="navLink"
+                  activeStyle={{ fontWeight: "600" }}
+                  to="/volunteer"
+                >
+                  Get Involved
+                </NavLink>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <NavLink className="navLink" activeStyle={{ fontWeight:"600" }} to="/contact">Contact Us</NavLink>
+                <NavLink
+                  className="navLink"
+                  activeStyle={{ fontWeight: "600" }}
+                  to="/contact"
+                >
+                  Contact Us
+                </NavLink>
               </Nav.Link>
             </Nav.Item>
             {/* <Nav.Item>

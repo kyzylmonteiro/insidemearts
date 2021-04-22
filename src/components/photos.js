@@ -1,88 +1,129 @@
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: "Photos/16.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/17.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/6.jpg",
+      width: 1280,
+      height: 960
+    },
+    {
+      src: "Photos/28.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/66.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/284.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      src: "Photos/85.jpg",
+      width: 1280,
+      height: 587
+    },
+    
+    {
+      src: "Photos/120.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/138.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/146.jpg",
+      width: 960,
+      height: 720
+    },
+    {
+      src: "Photos/112.jpg",
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      src: "Photos/152.jpg",
+      width: 720,
+      height: 960
+    },
+    {
+      src: "Photos/154.jpg",
+      width: 4,
+      height: 4
+    },
+    {
+      src: "Photos/155.jpg",
+      width: 4,
+      height: 4
+    },
+    {
+      src: "Photos/228.jpg",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
+      src: "Photos/265.jpg",
+      width: 1511,
+      height: 2015
     },
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: "Photos/269.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: "Photos/270.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: "Photos/273.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
+      src: "Photos/277.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
-      width: 4927,
-      height: 1000
-    },
-    {
-      src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
+      src: "Photos/279.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
+      src: "Photos/283.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
+      src: "Photos/70.jpg",
+      width: 1,
+      height: 1
+    },
+    {
+      src: "Photos/285.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-      width: 4,
-      height: 3
+      src: "Photos/78.jpg",
+      width: 1,
+      height: 1
     },
-    {
-      src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
-      width: 4,
-      height: 3
-    }
   ];
   

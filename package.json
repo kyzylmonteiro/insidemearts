@@ -13,6 +13,8 @@
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-error-boundary": "^3.1.1",
+    "react-grid-gallery": "^0.5.5",
+    "react-images": "^1.0.0",
     "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed#v2.0.0",
     "react-photo-gallery": "^8.0.0",
     "react-reveal": "^1.2.2",

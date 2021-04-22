@@ -1,3 +1,15 @@
+# todo
+
+- Feedback
+  - add videos & images from insta/fb to Media
+  - add details on hover of media
+  - change color to grey & white
+  - add audio to quotes & video bg to our initiative page
+  - add content maam shares in the text file
+- Other
+  - Footer with insta & FB links and icons
+  - correct Our latest Updates section glitch
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

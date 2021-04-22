@@ -14,7 +14,7 @@ const Quote = () => {
               )
               .pauseFor(500)
               .deleteAll()
-              .typeString("I don't see dreams, I hear them. <br/><br/> ~Anjali")
+              .typeString("They don't see dreams, They hear dreams. <br/><br/> ~Shivani Ma'am")
               .start();
           }}
         />

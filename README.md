@@ -3,12 +3,8 @@
   - make responsive
   - add captions to images
 
-# Getting Started with Create React App
-
+## Stack
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `yarn start`
@@ -20,5 +16,5 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm run deploy`
-
-Uploads to github pages to update the version that is being hosted.
+Follow this [link](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
+Uploads to gh-pages to update the version that is [being hosted](https://kyzylmonteiro.github.io/insidemearts/).

@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/insidemearts/static/css/main.1a016a78.chunk.css",
-    "main.js": "/insidemearts/static/js/main.5d546afb.chunk.js",
-    "main.js.map": "/insidemearts/static/js/main.5d546afb.chunk.js.map",
-    "runtime-main.js": "/insidemearts/static/js/runtime-main.62d5922a.js",
-    "runtime-main.js.map": "/insidemearts/static/js/runtime-main.62d5922a.js.map",
+    "main.css": "/insidemearts/static/css/main.881abf3f.chunk.css",
+    "main.js": "/insidemearts/static/js/main.bca2f833.chunk.js",
+    "main.js.map": "/insidemearts/static/js/main.bca2f833.chunk.js.map",
+    "runtime-main.js": "/insidemearts/static/js/runtime-main.c5210fb5.js",
+    "runtime-main.js.map": "/insidemearts/static/js/runtime-main.c5210fb5.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/insidemearts/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.40853f96.chunk.js": "/insidemearts/static/js/2.40853f96.chunk.js",
-    "static/js/2.40853f96.chunk.js.map": "/insidemearts/static/js/2.40853f96.chunk.js.map",
-    "static/js/3.8e499873.chunk.js": "/insidemearts/static/js/3.8e499873.chunk.js",
-    "static/js/3.8e499873.chunk.js.map": "/insidemearts/static/js/3.8e499873.chunk.js.map",
+    "static/js/2.118ea805.chunk.js": "/insidemearts/static/js/2.118ea805.chunk.js",
+    "static/js/2.118ea805.chunk.js.map": "/insidemearts/static/js/2.118ea805.chunk.js.map",
+    "static/js/3.79d843c3.chunk.js": "/insidemearts/static/js/3.79d843c3.chunk.js",
+    "static/js/3.79d843c3.chunk.js.map": "/insidemearts/static/js/3.79d843c3.chunk.js.map",
     "index.html": "/insidemearts/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/insidemearts/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.1a016a78.chunk.css.map": "/insidemearts/static/css/main.1a016a78.chunk.css.map",
-    "static/js/2.40853f96.chunk.js.LICENSE.txt": "/insidemearts/static/js/2.40853f96.chunk.js.LICENSE.txt",
+    "static/css/main.881abf3f.chunk.css.map": "/insidemearts/static/css/main.881abf3f.chunk.css.map",
+    "static/js/2.118ea805.chunk.js.LICENSE.txt": "/insidemearts/static/js/2.118ea805.chunk.js.LICENSE.txt",
     "static/media/logo.502aa1bf.png": "/insidemearts/static/media/logo.502aa1bf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.62d5922a.js",
+    "static/js/runtime-main.c5210fb5.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.40853f96.chunk.js",
-    "static/css/main.1a016a78.chunk.css",
-    "static/js/main.5d546afb.chunk.js"
+    "static/js/2.118ea805.chunk.js",
+    "static/css/main.881abf3f.chunk.css",
+    "static/js/main.bca2f833.chunk.js"
   ]
 }

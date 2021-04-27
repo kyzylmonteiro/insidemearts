@@ -23,17 +23,4 @@ const Quote = () => {
   );
 };
 
-const imgStyle = {
-  position: "relative",
-  width: "100%",
-};
-
-const spanStyle = {
-  color: "white",
-  letterSpacing: -1,
-  background: "rgb(0, 0, 0)",
-  background: "rgba(0, 0, 0, 0.7)",
-  padding: 10,
-};
-
 export default Quote;

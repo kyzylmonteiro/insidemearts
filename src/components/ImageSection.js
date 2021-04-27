@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Fade from "react-reveal/Fade";
 
@@ -24,6 +24,3 @@ const ImageSection = (props) => {
 };
 
 export default ImageSection;
-{
-  /* backgroundImage: `url("https://via.placeholder.com/1000")`, */
-}

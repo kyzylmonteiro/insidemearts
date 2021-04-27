@@ -27,10 +27,8 @@ body {
 }
 
 .navBar{
-  margin-top: 7vh;
-  margin-bottom: 5vh;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
 }
 
 .navLink, .navLink:hover {

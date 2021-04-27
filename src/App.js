@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Header from "./components/Header.js";
 import Quote from "./components/Quote.js";
 import ImageSection from "./components/ImageSection.js";
-import Feed from "react-instagram-authless-feed";
+// import Feed from "react-instagram-authless-feed";
 import Gallery from "react-grid-gallery";
 import { data } from "./data";
 import { photosMedia } from "./components/photosMedia";
 import { latestPhotos } from "./components/latestPhotos";
-import { ErrorBoundary } from "react-error-boundary";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { ErrorBoundary } from "react-error-boundary";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
 import Footer from "./components/Footer";
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import Tooltip from 'react-bootstrap/Tooltip'
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 function App() {
-  const [mute, setMute] = useState(false);
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Container>
@@ -73,7 +72,7 @@ function Home() {
 
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
-      {mute? "Listen to Ansh telling us about his dream." : "Mute" } 
+      {mute ? "Listen to Ansh telling us about his dream." : "Mute"}
     </Tooltip>
   );
 
@@ -107,61 +106,65 @@ function Home() {
           >
             Know More
           </Button>{" "}
-
           <OverlayTrigger
             placement="top"
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip}
           >
-          <Button
-            onClick={() => {
-              setMute(!mute);
-            }}
-            variant="outline-secondary"
-            style={{
-              float: "right",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-            }}
-          >
-            {!mute ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-volume-mute-fill"
-                viewBox="0 0 16 16"
-              >
-                <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-volume-up-fill"
-                viewBox="0 0 16 16"
-              >
-                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
-                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
-                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
-              </svg>
-            )}
-          </Button>
+            <Button
+              onClick={() => {
+                setMute(!mute);
+              }}
+              variant="outline-secondary"
+              style={{
+                float: "right",
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+              }}
+            >
+              {!mute ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-volume-mute-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-volume-up-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                  <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                </svg>
+              )}
+            </Button>
           </OverlayTrigger>
-
         </Row>
       </Row>
 
-      <Row
-        className="section"
-      >
-        <div style={{height:"100%", width:"100%", margin:"auto"}}>
-        <iframe width="100%" height="100%" src="Videos/imVolunteer.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <Row className="section">
+        <div style={{ height: "100%", width: "100%", margin: "auto" }}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="Videos/imVolunteer.mp4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </Row>
 
       <Row
@@ -195,14 +198,12 @@ function Home() {
 // https://github.com/kyzylmonteiro/ninjaJ2W/blob/efd63cf81152518a1036320bbb375fde7e5620f5/src/CardSection.js#L90
 
 function Initiative() {
-  const [mute, setMute] = useState(false);
   return (
     <div>
       <div>
         <video
           loop
           autoPlay
-          muted={mute}
           style={{
             position: "absolute",
             height: "80%",

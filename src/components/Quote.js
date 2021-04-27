@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 const Quote = () => {
   return (
     <div>
-      <h2 className="heading">
+      <h2 className="heading" style={{height:"35vh", fontSize:"8vh"}}>
         <Typewriter
           onInit={(typewriter) => {
             typewriter

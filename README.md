@@ -1,6 +1,4 @@
 # todo
-  - correct gallery & video padding
-  - shift gallery down on home, to just above footer
   - media gallery footer correct  
   - add content maam shares in the text file
   - make responsive

@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 export default function Footer() {
   return (
-    <Container style={{ padding: "3rem", paddingTop: "20vh" }}>
+    <Container style={{ padding: "3rem"}}>
       <p className="float-right">
         <a href="#">Back to top</a>
       </p>

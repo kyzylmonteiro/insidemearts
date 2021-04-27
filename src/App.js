@@ -101,7 +101,7 @@ function Home() {
         <Row style={{ minWidth: "20%", marginTop: "20%", bottom: "5%" }}>
           <Button
             variant="outline-secondary"
-            href="#details"
+            href="#more"
             className="mx-auto"
           >
             Know More
@@ -153,23 +153,34 @@ function Home() {
         </Row>
       </Row>
 
-      <Row className="section">
+      <Row className="section" id="more" style={{ height:"70vh" , padding: "15vh 0 15vh 0"}}>
         <div style={{ height: "100%", width: "100%", margin: "auto" }}>
-          <iframe
+          {/* <iframe
             width="100%"
             height="100%"
             src="Videos/imVolunteer.mp4"
-            title="YouTube video player"
+            title="Inside Me Arts: Volunteer"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
+          <video width="100%" controls>
+              <source src="videos/imVolunteer.mp4" type="video/mp4" />
+          </video>
+
         </div>
       </Row>
 
+      
+      <Row className="section" id="details">
+        <ImageSection
+          imagesrc={data[0].image}
+          heading={data[0].heading}
+          content={data[0].content}
+        />
+      </Row>
       <Row
         className="section"
-        style={{ height: "auto", paddingBottom: "20vh" }}
+        style={{ height: "auto", marginTop:"15%",paddingBottom: "20vh" }}
       >
         <Fade up distance="20%" duration={1000}>
           <Gallery
@@ -184,13 +195,6 @@ function Home() {
             // isOpen={ true}
           />
         </Fade>
-      </Row>
-      <Row className="section" id="details">
-        <ImageSection
-          imagesrc={data[0].image}
-          heading={data[0].heading}
-          content={data[0].content}
-        />
       </Row>
     </div>
   );

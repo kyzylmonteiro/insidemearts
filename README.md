@@ -5,6 +5,9 @@
   - add content maam shares in the text file
   - make responsive
   - add captions to images
+  - make tutorial video for maam
+    - add/ edit content
+    - add/ edit images/videos & its caption 
 
 ## Stack
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

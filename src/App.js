@@ -164,7 +164,7 @@ function Home() {
             allowfullscreen
           ></iframe> */}
           <video width="100%" controls>
-              <source src="videos/imVolunteer.mp4" type="video/mp4" />
+              <source src="Videos/imVolunteer.mp4" type="video/mp4" />
           </video>
 
         </div>

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/insidemearts/static/css/main.603921a7.chunk.css",
-    "main.js": "/insidemearts/static/js/main.0f7eb117.chunk.js",
-    "main.js.map": "/insidemearts/static/js/main.0f7eb117.chunk.js.map",
+    "main.css": "/insidemearts/static/css/main.587b90cb.chunk.css",
+    "main.js": "/insidemearts/static/js/main.6f2fb893.chunk.js",
+    "main.js.map": "/insidemearts/static/js/main.6f2fb893.chunk.js.map",
     "runtime-main.js": "/insidemearts/static/js/runtime-main.edb6387e.js",
     "runtime-main.js.map": "/insidemearts/static/js/runtime-main.edb6387e.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/insidemearts/static/css/2.4c97ca4f.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.99a77543.chunk.js.map": "/insidemearts/static/js/3.99a77543.chunk.js.map",
     "index.html": "/insidemearts/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/insidemearts/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.603921a7.chunk.css.map": "/insidemearts/static/css/main.603921a7.chunk.css.map",
+    "static/css/main.587b90cb.chunk.css.map": "/insidemearts/static/css/main.587b90cb.chunk.css.map",
     "static/js/2.d63217bb.chunk.js.LICENSE.txt": "/insidemearts/static/js/2.d63217bb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.edb6387e.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.d63217bb.chunk.js",
-    "static/css/main.603921a7.chunk.css",
-    "static/js/main.0f7eb117.chunk.js"
+    "static/css/main.587b90cb.chunk.css",
+    "static/js/main.6f2fb893.chunk.js"
   ]
 }

@@ -14,6 +14,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
 import Footer from "./components/Footer";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 
 function App() {
   const [mute, setMute] = useState(false);
@@ -56,6 +58,9 @@ function App() {
           <Route path="/">
             <Home />
           </Route>
+          <Route path="">
+            <Home />
+          </Route>
         </Switch>
         <Footer />
       </Container>
@@ -64,7 +69,14 @@ function App() {
 }
 
 function Home() {
-  const [mute, setMute] = useState(false);
+  const [mute, setMute] = useState(true);
+
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      {mute? "Listen to Ansh telling us about his dream." : "Mute" } 
+    </Tooltip>
+  );
+
   return (
     <div>
       <div>
@@ -95,6 +107,12 @@ function Home() {
           >
             Know More
           </Button>{" "}
+
+          <OverlayTrigger
+            placement="top"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+          >
           <Button
             onClick={() => {
               setMute(!mute);
@@ -133,8 +151,19 @@ function Home() {
               </svg>
             )}
           </Button>
+          </OverlayTrigger>
+
         </Row>
       </Row>
+
+      <Row
+        className="section"
+      >
+        <div style={{height:"100%", width:"100%", margin:"auto"}}>
+        <iframe width="100%" height="100%" src="Videos/imVolunteer.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </Row>
+
       <Row
         className="section"
         style={{ height: "auto", paddingBottom: "20vh" }}

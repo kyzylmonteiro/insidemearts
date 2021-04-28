@@ -6,20 +6,38 @@ import Fade from "react-reveal/Fade";
 const ImageSection = (props) => {
   return (
     <div>
-      <Row className="justify-content-md-center" style={{ paddingTop: "10%" }}>
-        <Col>
+      <div
+        className="ImageSectionHeading"
+        style={{ paddingTop: "10%", paddingBottom: "50px" }}
+      >
+        <h2 className="sectionHeading">{props.heading}</h2>
+      </div>
+      <div className="ImageSectionRow">
+        <div className="ImageSectionContent">
           <Fade up distance="20%" duration={1000}>
-            <h2 className="sectionHeading">{props.heading}</h2>
-            <Fade up distance="20%" duration={1000}>
-            <Image src={props.imagesrc} rounded fluid style={{float: "right", maxWidth:"25vw", maxHeight:"40vh" , padding:"30px"}} />
+            <p
+              className="sectionContent fontSection"
+              style={{ textAlign: "justify", textJustify: "inter-word" }}
+            >
+              {props.content}
+            </p>
           </Fade>
-            <p className="sectionContent" style={{textAlign:"justify", textJustify: "inter-word"}}>{props.content}</p>
-          </Fade>
-        {/* </Col>
+          {/* </Col>
         <Col className="justify-content-center" md={4}> */}
-          
-        </Col>
-      </Row>
+        </div>
+        <div className="imageSpacerImageSection">
+          <Fade up distance="20%" duration={1000} className="react-revealImage">
+            <Image
+              src={props.imagesrc}
+              rounded
+              fluid
+              style={{
+                padding: "30px",
+              }}
+            />
+          </Fade>
+        </div>
+      </div>
     </div>
   );
 };

@@ -98,12 +98,11 @@ function Home() {
       </div>
       <Row className="sectionOne quoteSection">
         <Quote />
-        <Row style={{ minWidth: "20%", marginTop: "20%", bottom: "5%" }}>
-          <Button
-            variant="outline-secondary"
-            href="#more"
-            className="mx-auto"
-          >
+        <Row
+          className="rowVolume"
+          style={{ minWidth: "20%", marginTop: "20%", bottom: "5%" }}
+        >
+          <Button variant="outline-secondary" href="#more" className="mx-auto">
             Know More
           </Button>{" "}
           <OverlayTrigger
@@ -153,9 +152,8 @@ function Home() {
         </Row>
       </Row>
 
-      <Row className="section" id="more" style={{ height:"70vh" , padding: "15vh 0 15vh 0"}}>
-        <div style={{ height: "100%", width: "100%", margin: "auto" }}>
-          {/* <iframe
+      <Row className="section videoSection" id="more">
+        {/* <iframe
             width="100%"
             height="100%"
             src="Videos/imVolunteer.mp4"
@@ -163,14 +161,11 @@ function Home() {
             frameborder="0"
             allowfullscreen
           ></iframe> */}
-          <video width="100%" controls>
-              <source src="Videos/imVolunteer.mp4" type="video/mp4" />
-          </video>
-
-        </div>
+        <video width="100%" controls>
+          <source src="Videos/imVolunteer.mp4" type="video/mp4" />
+        </video>
       </Row>
 
-      
       <Row className="section" id="details">
         <ImageSection
           imagesrc={data[0].image}
@@ -180,7 +175,7 @@ function Home() {
       </Row>
       <Row
         className="section"
-        style={{ height: "auto", marginTop:"15%",paddingBottom: "20vh" }}
+        style={{ height: "auto", marginTop: "15%", paddingBottom: "20vh" }}
       >
         <Fade up distance="20%" duration={1000}>
           <Gallery
@@ -203,14 +198,14 @@ function Home() {
 
 function Initiative() {
   return (
-    <div>
+    <div className="initiative">
       <div>
         <video
           loop
           autoPlay
           style={{
             position: "absolute",
-            height: "80%",
+            height: "80vh",
             width: "100%",
             objectFit: "cover",
             right: "0%",
@@ -221,7 +216,7 @@ function Initiative() {
           <source src="Videos/im1.mp4" type="video/mp4"></source>
         </video>
       </div>
-      <div className="sectionOne">
+      <div>
         <ImageSection
           imagesrc={data[1].image}
           heading={data[1].heading}
@@ -234,26 +229,24 @@ function Initiative() {
 
 function Media() {
   return (
-    <div>
-      <div>
-        <Fade up distance="20%" duration={1000} delay={300}>
-          <h2 className="sectionHeading">Media</h2>
-        </Fade>
-        <Fade up distance="5%" duration={1000} delay={300}>
-          <Gallery
-            images={photosMedia}
-            enableLightbox={true}
-            rowHeight={360}
-            margin={4}
-            enableImageSelection={false}
-            // maxRows={3}
-            backdropClosesModal
-            // currentImage={3}
-            // isOpen={ true}
-          />
-        </Fade>
+    <>
+      <Fade up distance="20%" duration={1000} delay={300}>
+        <h2 className="sectionHeading">Media</h2>
+      </Fade>
+      <div className="MediaSection">
+        <Gallery
+          images={photosMedia}
+          enableLightbox={true}
+          rowHeight={360}
+          margin={4}
+          enableImageSelection={false}
+          // maxRows={3}
+          backdropClosesModal
+          // currentImage={3}
+          // isOpen={ true}
+        />
       </div>
-    </div>
+    </>
   );
 }
 

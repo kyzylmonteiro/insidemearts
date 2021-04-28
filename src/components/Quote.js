@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 const Quote = () => {
   return (
     <div>
-      <h2 className="heading" style={{height:"35vh", fontSize:"8vh"}}>
+      <h2 className="heading">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -14,7 +14,9 @@ const Quote = () => {
               )
               .pauseFor(500)
               .deleteAll()
-              .typeString("They don't see dreams, They hear dreams. <br/><br/> ~Shivani Ma'am")
+              .typeString(
+                "They don't see dreams, They hear dreams. <br/><br/> ~Shivani Ma'am"
+              )
               .start();
           }}
         />

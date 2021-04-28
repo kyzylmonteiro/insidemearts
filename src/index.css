@@ -1,37 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway&display=swap");
 
 /* 
 font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif;
   */
 
-html{
+html {
   scroll-behavior: smooth;
   background-color: #222222;
 }
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
-  max-width: '100%';
+.container {
+  max-width: "100%";
 }
 
-#root{
+#root {
   background-color: #222222;
   color: white;
 }
 
-.navBar{
+.navBar {
   padding-top: 7vh;
   padding-bottom: 5vh;
 }
 
-.navLink, .navLink:hover {
+.navLink,
+.navLink:hover {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
@@ -41,8 +42,8 @@ body {
 }
 
 /* first section height compensate navbar */
-.sectionOne {    
-  height: 80vh;
+.sectionOne {
+  height: 100vh;
   width: 100%;
   display: flex;
   /* justify-content: center; */
@@ -61,20 +62,20 @@ body {
   flex-direction: column;
 }
 
-.heading{
-  font-family: 'Raleway', sans-serif;
+.heading {
+  font-family: "Raleway", sans-serif;
   font-size: 70px;
 }
 
-.sectionHeading{
-  font-family: 'Raleway', sans-serif;
+.sectionHeading {
+  font-family: "Raleway", sans-serif;
   font-size: 5.9vh;
   /* color: grey;  */
   text-align: left;
 }
 
-.sectionContent{
-  font-family: 'Quicksand', sans-serif;
+.sectionContent {
+  font-family: "Quicksand", sans-serif;
   font-size: 2vmin;
   /* color: grey;  */
   text-align: left;
@@ -111,11 +112,128 @@ body {
   border-radius: 10px;
 }
 
+.heading {
+  height: 35vh;
+  font-size: 4rem;
+}
+
+.img-fluid {
+  float: right !important;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+.rowVolume {
+  max-width: 100%;
+  display: flex !important;
+  padding: 0px 20px;
+}
+
+.videoSection {
+  height: "70vh" !important;
+  padding: "15vh 0 15vh 0" !important;
+}
+
+.img-fluid {
+  float: right !important;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+}
+
+.MediaSection {
+  display: block;
+}
+
+.initiative {
+  width: 100%;
+  display: flex;
+  height: 80vh;
+}
+.imageSpacerImageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.ImageSectionRow {
+  flex: 1;
+  display: flex;
+}
+.ImageSectionContent {
+  flex: 2;
+}
+.ImageSectionHeading {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .navBar {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .row {
+    margin-left: 0px;
+  }
+
+  .heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    margin-left: 0px !important;
+  }
+
+  .heading {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .img-fluid {
+    margin: auto;
+    width: 80% !important;
+    float: none !important;
+  }
+  .react-reveal {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .fontSection {
+    font-size: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .ImageSectionRow {
+    flex-direction: column-reverse;
+  }
+  .ImageSectionHeading h2 {
+    text-align: center;
+  }
+  .initiative {
+    height: auto !important;
   }
 }

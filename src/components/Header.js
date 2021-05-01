@@ -6,8 +6,8 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="navBar">
-      <Navbar collapseOnSelect expand="lg">
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar collapseOnSelect expand="xl">
+        <Navbar.Toggle className="navbar-dark" aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           {/* <Navbar.Brand href="/">
           <img

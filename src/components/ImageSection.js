@@ -15,12 +15,35 @@ const ImageSection = (props) => {
       <div className="ImageSectionRow">
         <div className="ImageSectionContent">
           <Fade up distance="20%" duration={1000}>
-            <p
+            {/* <p
               className="sectionContent fontSection"
               style={{ textAlign: "justify", textJustify: "inter-word" }}
             >
               {props.content}
-            </p>
+            </p> */}
+
+            {props.content.para.map((item) => {
+              return (
+                <p
+                  className="sectionContent fontSection"
+                  style={{ textAlign: "justify", textJustify: "inter-word" }}
+                >
+                  {item}
+                </p>
+              );
+            })}
+
+            {props.content.points !== [] &&
+              Object.keys(props.content.points).map((key, i) => (
+                <div>
+                  <h3>{key}</h3>
+                  <ul>
+                    {props.content.points[key].map((item) => {
+                      return <li>{item}</li>;
+                    })}
+                  </ul>
+                </div>
+              ))}
           </Fade>
           {/* </Col>
         <Col className="justify-content-center" md={4}> */}

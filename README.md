@@ -1,7 +1,5 @@
-# todo
-  - media gallery footer correct  
+# todo 
   - add content maam shares in the text file
-  - make responsive
   - add captions to images
   - make tutorial video for maam
     - add/ edit content

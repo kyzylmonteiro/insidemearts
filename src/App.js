@@ -72,7 +72,7 @@ function Home() {
 
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
-      {mute ? "Listen to Ansh telling us about his dream." : "Mute"}
+      {mute ? "Listen to Sanjay telling us about his dream." : "Mute"}
     </Tooltip>
   );
 
@@ -177,7 +177,7 @@ function Home() {
         className="section"
         style={{ height: "auto", marginTop: "15%", paddingBottom: "20vh" }}
       >
-        <Fade up distance="20%" duration={1000}>
+        {/* <Fade up distance="20%" duration={1000}> */}
           <Gallery
             images={latestPhotos}
             enableLightbox={true}
@@ -189,7 +189,7 @@ function Home() {
             // currentImage={3}
             // isOpen={ true}
           />
-        </Fade>
+        {/* </Fade> */}
       </Row>
     </div>
   );

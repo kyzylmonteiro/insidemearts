@@ -24,42 +24,53 @@ const ImageSection = (props) => {
 
             {props.content.para.map((item) => {
               return (
-                <p
-                  className="sectionContent fontSection"
-                  style={{ textAlign: "justify", textJustify: "inter-word" }}
-                >
-                  {item}
-                </p>
+                <div>
+                  {item.heading !== "" && <h3>{item.heading}</h3>}
+                  <p
+                    className="sectionContent fontSection"
+                    style={{ textAlign: "justify", textJustify: "inter-word" }}
+                  >
+                    {item.content}
+                  </p>
+                </div>
               );
             })}
 
-            {props.content.points !== [] &&
-              Object.keys(props.content.points).map((key, i) => (
-                <div>
-                  <h3>{key}</h3>
+            {props.content.pointsContent.map((pt) => (
+              <div>
+                {pt.heading !== "" && <h4>{pt.heading}</h4>}
+                {pt.points[0] !== "" && (
                   <ul>
-                    {props.content.points[key].map((item) => {
+                    {pt.points.map((item) => {
                       return <li>{item}</li>;
                     })}
                   </ul>
-                </div>
-              ))}
+                )}
+              </div>
+            ))}
           </Fade>
           {/* </Col>
         <Col className="justify-content-center" md={4}> */}
         </div>
-        <div className="imageSpacerImageSection">
-          <Fade up distance="20%" duration={1000} className="react-revealImage">
-            <Image
-              src={props.imagesrc}
-              rounded
-              fluid
-              style={{
-                padding: "30px",
-              }}
-            />
-          </Fade>
-        </div>
+        {props.imagesrc !== "" && (
+          <div className="imageSpacerImageSection">
+            <Fade
+              up
+              distance="20%"
+              duration={1000}
+              className="react-revealImage"
+            >
+              <Image
+                src={props.imagesrc}
+                rounded
+                fluid
+                style={{
+                  padding: "30px",
+                }}
+              />
+            </Fade>
+          </div>
+        )}
       </div>
     </div>
   );

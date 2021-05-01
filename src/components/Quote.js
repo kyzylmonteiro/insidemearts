@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const Quote = () => {
+const Quote = (props) => {
   return (
     <div>
       <h2 className="heading">
@@ -10,12 +10,12 @@ const Quote = () => {
             typewriter
 
               .typeString(
-                "Inside Me, an effort to make the blind visualize the unseen."
+                "They don't see dreams, They hear dreams. We make them draw their dreams."
               )
-              .pauseFor(500)
+              .pauseFor(800)
               .deleteAll()
               .typeString(
-                "They don't see dreams, They hear dreams."
+                "Inside Me, an effort to make the blind visualize the unseen."
               )
               .start();
           }}

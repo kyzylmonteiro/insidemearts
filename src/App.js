@@ -100,7 +100,7 @@ function Home() {
         <Quote />
         <Row
           className="rowVolume"
-          style={{ minWidth: "20%", marginTop: "20%", bottom: "5%" }}
+          style={{ minWidth: "20%", marginTop: "17%", bottom: "5%" }}
         >
           <Button variant="outline-secondary" href="#more" className="mx-auto">
             Know More
@@ -199,7 +199,7 @@ function Home() {
 function Initiative() {
   return (
     <div className="initiative">
-      <div>
+      <div style={{"height": "80vh", "display": "flex", "width": "0%"}}>
         <video
           loop
           autoPlay
@@ -216,13 +216,11 @@ function Initiative() {
           <source src="Videos/im1.mp4" type="video/mp4"></source>
         </video>
       </div>
-      <div>
         <ImageSection
           imagesrc={data[1].image}
           heading={data[1].heading}
           content={data[1].content}
         />
-      </div>
     </div>
   );
 }

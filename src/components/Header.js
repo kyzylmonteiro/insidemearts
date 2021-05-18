@@ -55,7 +55,7 @@ const Header = () => {
                   activeStyle={{ fontWeight: "600" }}
                   to="/donate"
                 >
-                  Donate
+                  Help Us
                 </NavLink>
               </Nav.Link>
             </Nav.Item>
@@ -66,7 +66,7 @@ const Header = () => {
                   activeStyle={{ fontWeight: "600" }}
                   to="/volunteer"
                 >
-                  Get Involved
+                  Join Us
                 </NavLink>
               </Nav.Link>
             </Nav.Item>

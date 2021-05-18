@@ -12,7 +12,7 @@ export const data = [
         {
           heading: "",
           content:
-            "Inside Me is an effort tomake blind imagine,visualize,  feel and seethe world from innereyes. In a way they seeeverything because theyhave not seen anything.We try to make blindchildren visualize theworld around them byusing their availablesenses. We use drawingas a medium and crayonas a tool. Indian Blind schools have allthe subjects except Drawingand Painting. Our effort is toestablish blind drawing as asubject in India. There arespecial devices throughwhich the feel of the linesand drawings becomes easyfor them. We teach themshapes, sizes, curves, linesand geometrical structures.This help them to understandother subjects also. They are living a mundane lifebased on donation andsympathy. It is our objective toprovide empowerment tovisually impaired individuallyso that they can live a qualitylife outside their premises. Weteach them to write using ourdevices so that they can writethe way normal children write. Once the subject is established in India,the talented children will be appointedas paid volunteers and teachers. In thisway, the blind children will getemployment.",
+            "Inside Me is an effort to make blind imagine,visualize, feel and see the world from innereyes. In a way they see everything because they have not seen anything. We try to make blind children visualize the world around them by using their available senses. We use drawing as a medium and crayonas a tool. Indian Blind schools have all the subjects except Drawing and Painting. Our effort is to establish drawing as a subject in India. There are special devices through which the feel of the lines and drawings becomes easier for them. We teach them shapes, sizes, curves, lines and geometrical structures. This help them to understand other subjects also. They are living a mundane life based on donation and sympathy. It is our objective to provide empowerment to visually impaired individuals so that they can live a quality life outside their premises. We teach them to write using ourdevices so that they can writethe way normal children write. Once the subject is established in India,the talented children will be appointedas paid volunteers and teachers. In this way, the blind children will get employment.",
         },
         { heading: "", content: "" },
       ],
@@ -32,30 +32,53 @@ export const data = [
         {
           heading: "",
           content:
-            "Our mission is to cover remote and deprived schools of India. The blind is living a mundane life based on donation and sympathy. It is our objective to provide empowerment and a sense of being so that they can cope in the world outside these premisesInside Me teaches drawing to empower these youth. Increased exposure to drawing will help the blind understand and represent space concept and symbolic relations. Visual art or drawing improves both academic achievement and performance on standardized testsUnfortunately, drawing as a subject for students with visual impairment has not been incorporated in India But we hope to change that.",
+            "Inside Me try to make blind children visualize by using their available senses. We use drawing as a medium and crayon as a tool. We cannot provide them sight but can help them to understand the world around them. They have been taught that Roti is round, the Sun is a circle, but what a circle is? They eat biscuits daily, but never thought about whether it is round, rectangle or square. We make them study things around them by touch and feel so that they can learn different shapes and relate these shapes with the objects they use daily. However, helping the blind to visualize is not easy. They have never seen any light, color or object since birth.",
         },
-        { heading: "", content: "" },
+        {
+          heading: "",
+          content:
+            "Inside Me is Delhi based nonprofit registered organization working with blind since 2013. Being an effort thriving on volunteers, we have expanded our operations from Amar Colony Blind School to JAAV, Sadiq Nagar, training and teaching 15-20 students in each school. Some people call their world dark, but how can it be dark if they have not seen black",
+        },
+        {
+          heading: "Why Teach the Blind to Draw?",
+          content:
+            "If art is essential in our society then why we are blind towards visually impaired children? They are taught all the subjects in their school except drawing. Every child draws during their initial years, but they have listened about it only and never got chance to draw like other children. Blind children are taught that the Sun, Moon and Earth are round. But they have no concept of what round actually is, and how to draw it. They’ve felt the warmth of the Sun, but never visualized how it looks. This perspective is also absent from their studies. In mathematics, they are taught geometry in Braille. Drawing helps them to understand the world around them. They become more aware of their environment and surroundings. We cannot give them sight but a vision.",
+        },
+        {
+          heading: "How do we Teach?",
+          content:
+            "The blind need repeated hands-on experience to learn many shapes. Increased exposure to drawing will help the blind understand and represent space concept and symbolic relations. Visual art or drawing improves both academic achievement and performance on standardized tests. Presently, we have developed a training module of about 2 hours for four days a week to train a batch of up to 15-20 visually impaired at The Institution For the Blind, Amar Colony, and Janta Adarsh Andh Vidyalaya at Sadiq Nagar, New Delhi. The number may vary according to their interest and consistency. We conduct the classes, prepare case studies and churn out the best works of each student and organize an art exhibition as an extension to their creation and achievement. ",
+        },
       ],
       pointsContent: [
         {
           heading: "",
-          points: [""],
+          points: [
+            "We describe an object or concept using consistent vocabulary and comparisons in terms of size, texture and the objects, the students are familiar with. Example, the face is almost the size of your palm, eyes are like almond shape and butterfly’s wings feel like tissue paper.",
+            "We encourage our students to use their available senses (hearing, touch, smell and taste) to widen their horizon and understand the objects.",
+            "We include their subject syllabus in drawing classes so that understanding their subjects visually becomes easier.",
+            "We teach them to write alphabets so that they can write the way normal children write.",
+            "By teaching them different shapes using molds and help them develop a mental model of how the parts can combine to create a new shape with new dimensions.",
+            "Providing opportunities for experiential learning as much as possible. This includes observing objects in their school premises, touching the utensils, food and objects they are using in day to day life, as well as tables, chair, sports equipment etc.",
+            "We take them to museums, art fairs and workshops, which help them to explore the world outside their premises.",
+            "We also exhibit their works in different art fairs and festivals so that people can see the beautiful drawings these children create. This gives them an exposure to the artwork.",
+          ],
         },
       ],
     },
   },
 
   {
-    heading: "Donate",
+    heading: "Help Us",
     image: "Photos/5.jpeg",
     content: {
       para: [
         {
           heading: "",
           content:
-            "In order to donate to our cause, please write to us at insidemearts@gmail.com",
+            "Help us so that we can help them with their necessities during Covid 19. To be honest, we do not have a revenue generating mechanism so far. Ours is not a business aimed at earning revenues for generating profit. Yet, we do look forward to accumulating funds in order to create a reserve fund to support our initiative. There are 19 blind schools in Delhi and India is a home for maximum blind in the world. These special children are among quite a few who are privileged enough to possess some special talent that includes art. We try reaching out to art festivals for allowing us exhibiting the accomplishments of these special talents. Whatever we earn through sale of their work is invested back in nourishing their talents and fulfill their daily needs. Our main target is to cover the schools in the remote areas, region of the country. In Delhi, we are focusing on deprived schools first. At present, our main challenge is to appoint a dedicated team and volunteers. We need funds to create a set up for an art platform with a strong team to manage the sale of these young artist’s artwork. If you consider it worth taking ahead, your support and help in any way would be appreciated utilized to our needs. By donating, you can support blind to earn a sustainable income, they can start their family life too. Let us infuse some hope into the world of unseen.",
         },
-        { heading: "", content: "" },
+        { heading: "Present scenario", content: "Presently, we have developed a training module of about 2 hours for five-six days a week to train a batch of up to 8-10 visually impaired at The Institution For the Blind, Amar Colony, and JAAV at Sadiq Nagar, New Delhi. We conduct the classes, prepare case studies and churn out the best works of each student and organize an art exhibition as an extension to their creation and achievement. To widen their horizon, we take them to art workshops and visits to historical places so that they can study structures, history, forms and designs. Our participation in art exhibitions and fairs have given us immense popularity and appreciation with media coverage. People, artists, visitors from all over exchange ideas and mediums, which help these children to understand the art world. We arrange workshops, visits and educational tours to widen their horizon. We are looking forward to tying up the companies and NGO who provide professional training to visually impaired so that they can enhance their skills to get employment. Making them look straight in the Eye." },
       ],
       pointsContent: [
         {
@@ -67,7 +90,7 @@ export const data = [
   },
 
   {
-    heading: "Volunteer with Us",
+    heading: "Join Us",
     image: "",
     content: {
       para: [

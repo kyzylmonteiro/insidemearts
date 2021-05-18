@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 const ImageSection = (props) => {
   return (
-    <div>
+    <div style={{"overflow": "auto"}}>
       <div
         className="ImageSectionHeading"
         style={{ paddingTop: "10%", paddingBottom: "50px" }}
@@ -25,7 +25,7 @@ const ImageSection = (props) => {
             {props.content.para.map((item) => {
               return (
                 <div>
-                  {item.heading !== "" && <h3>{item.heading}</h3>}
+                  {item.heading !== "" && <h3 style={{paddingTop:"2vh"}}>{item.heading}</h3>}
                   <p
                     className="sectionContent fontSection"
                     style={{ textAlign: "justify", textJustify: "inter-word" }}
@@ -38,7 +38,7 @@ const ImageSection = (props) => {
 
             {props.content.pointsContent.map((pt) => (
               <div>
-                {pt.heading !== "" && <h4>{pt.heading}</h4>}
+                {pt.heading !== "" && <h4 style={{paddingTop:"2vh"}}>{pt.heading}</h4>}
                 {pt.points[0] !== "" && (
                   <ul>
                     {pt.points.map((item) => {

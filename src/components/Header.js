@@ -53,6 +53,17 @@ const Header = () => {
                 <NavLink
                   className="navLink"
                   activeStyle={{ fontWeight: "600" }}
+                  to="/gallery"
+                >
+                  Gallery
+                </NavLink>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>
+                <NavLink
+                  className="navLink"
+                  activeStyle={{ fontWeight: "600" }}
                   to="/donate"
                 >
                   Help Us

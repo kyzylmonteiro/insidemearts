@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "react-bootstrap";
 import Header from "./components/Header.js";
@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
 import Footer from "./components/Footer";
+import Test from "./components/Test";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
@@ -42,6 +43,9 @@ function App() {
           <Route path="/initiative">
             <Initiative />
           </Route>
+          <Route path="/gallery">
+            <Test />
+          </Route>
           <Route path="/media">
             <Media />
           </Route>
@@ -68,8 +72,13 @@ function App() {
 }
 
 function Home() {
-  const [mute, setMute] = useState(true);
+  const audio = useRef(null);
 
+  const [mute, setMute] = useState(true);
+  const handlePlayAudio = () => {
+    audio.current.play();
+    setMute(!mute);
+  }
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       {mute ? "Listen to Sanjay telling us about his dream." : "Mute"}
@@ -80,9 +89,10 @@ function Home() {
     <div>
       <div>
         <video
-          loop
-          autoPlay
+          // loop
+          // autoPlay
           muted={mute}
+          ref= {audio}
           style={{
             position: "absolute",
             height: "80%",
@@ -111,9 +121,7 @@ function Home() {
             overlay={renderTooltip}
           >
             <Button
-              onClick={() => {
-                setMute(!mute);
-              }}
+              onClick={handlePlayAudio}
               variant="outline-secondary"
               style={{
                 float: "right",

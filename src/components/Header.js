@@ -42,9 +42,9 @@ const Header = () => {
                 <NavLink
                   className="navLink"
                   activeStyle={{ fontWeight: "600" }}
-                  to="/media"
+                  to="/gallery"
                 >
-                  Media
+                  Gallery
                 </NavLink>
               </Nav.Link>
             </Nav.Item>
@@ -53,9 +53,9 @@ const Header = () => {
                 <NavLink
                   className="navLink"
                   activeStyle={{ fontWeight: "600" }}
-                  to="/gallery"
+                  to="/news"
                 >
-                  Gallery
+                  News
                 </NavLink>
               </Nav.Link>
             </Nav.Item>

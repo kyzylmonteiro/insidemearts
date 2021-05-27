@@ -1,0 +1,13 @@
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ReactGridGallery_tile{
+    background: none !important;
+  }
+  
+  .ReactGridGallery_tile-description{
+    background: none !important;
+  }

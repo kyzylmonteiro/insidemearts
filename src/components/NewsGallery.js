@@ -1,6 +1,6 @@
 import React from "react";
 
-const Gallery = ({ data }) => {
+const NewsGallery = ({ data }) => {
   const { src, thumbnail, caption, link } = data;
 
   return (
@@ -15,4 +15,4 @@ const Gallery = ({ data }) => {
   );
 };
 
-export default Gallery;
+export default NewsGallery;

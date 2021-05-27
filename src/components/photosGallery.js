@@ -1,12 +1,12 @@
-export const photosMedia = [
+export const photosGallery = [
   {
     src: "Photos/16.jpg",
     thumbnail: "Photos/16.jpg",
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...",
-    link: "https://www.youtube.com/",
+      "Headline",
+     
   },
   {
     src: "Photos/17.jpg",
@@ -14,7 +14,7 @@ export const photosMedia = [
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -22,8 +22,8 @@ export const photosMedia = [
     thumbnail: "Photos/6.jpg",
     thumbnailWidth: 1280,
     thumbnailHeight: 960,
-    caption: "Caption of image",
-    link: "https://www.youtube.com/",
+    caption: "Caption of image", 
+     
   },
   {
     src: "Photos/28.jpg",
@@ -31,7 +31,7 @@ export const photosMedia = [
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/66.jpg",
@@ -39,7 +39,7 @@ export const photosMedia = [
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -48,15 +48,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
-  },
-  {
-    src: "Photos/85.jpg",
-    thumbnail: "Photos/85.jpg",
-    thumbnailWidth: 1280,
-    thumbnailHeight: 587,
-    caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/120.jpg",
@@ -64,7 +56,7 @@ export const photosMedia = [
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -73,7 +65,7 @@ export const photosMedia = [
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/146.jpg",
@@ -81,7 +73,7 @@ export const photosMedia = [
     thumbnailWidth: 960,
     thumbnailHeight: 720,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/112.jpg",
@@ -89,7 +81,7 @@ export const photosMedia = [
     thumbnailWidth: 1,
     thumbnailHeight: 1,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -98,7 +90,7 @@ export const photosMedia = [
     thumbnailWidth: 720,
     thumbnailHeight: 960,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -107,7 +99,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 4,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -116,7 +108,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 4,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -125,7 +117,7 @@ export const photosMedia = [
     thumbnailWidth: 3,
     thumbnailHeight: 4,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -134,7 +126,7 @@ export const photosMedia = [
     thumbnailWidth: 1511,
     thumbnailHeight: 2015,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -143,7 +135,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -152,7 +144,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -161,7 +153,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 
   {
@@ -170,7 +162,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/279.jpg",
@@ -178,7 +170,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/283.jpg",
@@ -186,7 +178,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/70.jpg",
@@ -194,7 +186,7 @@ export const photosMedia = [
     thumbnailWidth: 1,
     thumbnailHeight: 1,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/285.jpg",
@@ -202,7 +194,7 @@ export const photosMedia = [
     thumbnailWidth: 4,
     thumbnailHeight: 3,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
   {
     src: "Photos/78.jpg",
@@ -210,6 +202,6 @@ export const photosMedia = [
     thumbnailWidth: 1,
     thumbnailHeight: 1,
     caption: "Caption of image",
-    link: "https://www.youtube.com/",
+     
   },
 ];

@@ -32,6 +32,11 @@ export const data = [
         {
           heading: "",
           content:
+            "In a way they see everything because they have not seen anything.",
+        },
+        {
+          heading: "",
+          content:
             "Inside Me try to make blind children visualize by using their available senses. We use drawing as a medium and crayon as a tool. We cannot provide them sight but can help them to understand the world around them. They have been taught that Roti is round, the Sun is a circle, but what a circle is? They eat biscuits daily, but never thought about whether it is round, rectangle or square. We make them study things around them by touch and feel so that they can learn different shapes and relate these shapes with the objects they use daily. However, helping the blind to visualize is not easy. They have never seen any light, color or object since birth.",
         },
         {
@@ -40,14 +45,38 @@ export const data = [
             "Inside Me is Delhi based nonprofit registered organization working with blind since 2013. Being an effort thriving on volunteers, we have expanded our operations from Amar Colony Blind School to JAAV, Sadiq Nagar, training and teaching 15-20 students in each school. Some people call their world dark, but how can it be dark if they have not seen black",
         },
         {
+          heading: "",
+          content:
+            "Some people call their world dark, but how can it be dark if they have not seen black",
+        },
+        {
           heading: "Why Teach the Blind to Draw?",
           content:
-            "If art is essential in our society then why we are blind towards visually impaired children? They are taught all the subjects in their school except drawing. Every child draws during their initial years, but they have listened about it only and never got chance to draw like other children. Blind children are taught that the Sun, Moon and Earth are round. But they have no concept of what round actually is, and how to draw it. They’ve felt the warmth of the Sun, but never visualized how it looks. This perspective is also absent from their studies. In mathematics, they are taught geometry in Braille. Drawing helps them to understand the world around them. They become more aware of their environment and surroundings. We cannot give them sight but a vision.",
+            "If art is essential in our society then why we are blind towards visually impaired children? They are taught all the subjects in their school except drawing. Every child draws during their initial years, but they have listened about it only and never got chance to draw like other children. ",
+        },
+        {
+          heading: "",
+          content:
+            "Blind children are taught that the Sun, Moon and Earth are round. But they have no concept of what round actually is, and how to draw it. They’ve felt the warmth of the Sun, but never visualized how it looks.",
+        },
+        {
+          heading: "",
+          content:
+            "This perspective is also absent from their studies. In mathematics, they are taught geometry in Braille. Drawing helps them to understand the world around them. They become more aware of their environment and surroundings.",
+        },
+        {
+          heading: "",
+          content: "We cannot give them sight but a vision.",
         },
         {
           heading: "How do we Teach?",
           content:
-            "The blind need repeated hands-on experience to learn many shapes. Increased exposure to drawing will help the blind understand and represent space concept and symbolic relations. Visual art or drawing improves both academic achievement and performance on standardized tests. Presently, we have developed a training module of about 2 hours for four days a week to train a batch of up to 15-20 visually impaired at The Institution For the Blind, Amar Colony, and Janta Adarsh Andh Vidyalaya at Sadiq Nagar, New Delhi. The number may vary according to their interest and consistency. We conduct the classes, prepare case studies and churn out the best works of each student and organize an art exhibition as an extension to their creation and achievement. ",
+            "The blind need repeated hands-on experience to learn many shapes. Increased exposure to drawing will help the blind understand and represent space concept and symbolic relations. Visual art or drawing improves both academic achievement and performance on standardized tests.",
+        },
+        {
+          heading: "",
+          content:
+            "Presently, we have developed a training module of about 2 hours for four days a week to train a batch of up to 15-20 visually impaired at The Institution For the Blind, Amar Colony, and Janta Adarsh Andh Vidyalaya at Sadiq Nagar, New Delhi. The number may vary according to their interest and consistency. We conduct the classes, prepare case studies and churn out the best works of each student and organize an art exhibition as an extension to their creation and achievement. ",
         },
       ],
       pointsContent: [
@@ -76,9 +105,43 @@ export const data = [
         {
           heading: "",
           content:
-            "Help us so that we can help them with their necessities during Covid 19. To be honest, we do not have a revenue generating mechanism so far. Ours is not a business aimed at earning revenues for generating profit. Yet, we do look forward to accumulating funds in order to create a reserve fund to support our initiative. There are 19 blind schools in Delhi and India is a home for maximum blind in the world. These special children are among quite a few who are privileged enough to possess some special talent that includes art. We try reaching out to art festivals for allowing us exhibiting the accomplishments of these special talents. Whatever we earn through sale of their work is invested back in nourishing their talents and fulfill their daily needs. Our main target is to cover the schools in the remote areas, region of the country. In Delhi, we are focusing on deprived schools first. At present, our main challenge is to appoint a dedicated team and volunteers. We need funds to create a set up for an art platform with a strong team to manage the sale of these young artist’s artwork. If you consider it worth taking ahead, your support and help in any way would be appreciated utilized to our needs. By donating, you can support blind to earn a sustainable income, they can start their family life too. Let us infuse some hope into the world of unseen.",
+            "Help us so that we can help them with their necessities during Covid 19. ",
         },
-        { heading: "Present scenario", content: "Presently, we have developed a training module of about 2 hours for five-six days a week to train a batch of up to 8-10 visually impaired at The Institution For the Blind, Amar Colony, and JAAV at Sadiq Nagar, New Delhi. We conduct the classes, prepare case studies and churn out the best works of each student and organize an art exhibition as an extension to their creation and achievement. To widen their horizon, we take them to art workshops and visits to historical places so that they can study structures, history, forms and designs. Our participation in art exhibitions and fairs have given us immense popularity and appreciation with media coverage. People, artists, visitors from all over exchange ideas and mediums, which help these children to understand the art world. We arrange workshops, visits and educational tours to widen their horizon. We are looking forward to tying up the companies and NGO who provide professional training to visually impaired so that they can enhance their skills to get employment. Making them look straight in the Eye." },
+        {
+          heading: "",
+          content:
+            "To be honest, we do not have a revenue generating mechanism so far. Ours is not a business aimed at earning revenues for generating profit. Yet, we do look forward to accumulating funds in order to create a reserve fund to support our initiative. There are 19 blind schools in Delhi and India is a home for maximum blind in the world. These special children are among quite a few who are privileged enough to possess some special talent that includes art. We try reaching out to art festivals for allowing us exhibiting the accomplishments of these special talents. Whatever we earn through sale of their work is invested back in nourishing their talents and fulfill their daily needs.",
+        },
+        {
+          heading: "",
+          content:
+            "Our main target is to cover the schools in the remote areas, region of the country. In Delhi, we are focusing on deprived schools first. At present, our main challenge is to appoint a dedicated team and volunteers.",
+        },
+        {
+          heading: "",
+          content:
+            "We need funds to create a set up for an art platform with a strong team to manage the sale of these young artist’s artwork. If you consider it worth taking ahead, your support and help in any way would be appreciated utilized to our needs. By donating, you can support blind to earn a sustainable income, they can start their family life too.",
+        },
+        {
+          heading: "",
+          content:
+            "Let us infuse some hope into the world of unseen.",
+        },
+        {
+          heading: "Present scenario",
+          content:
+            "Presently, we have developed a training module of about 2 hours for five-six days a week to train a batch of up to 8-10 visually impaired at The Institution For the Blind, Amar Colony, and JAAV at Sadiq Nagar, New Delhi. We conduct the classes, prepare case studies and churn out the best works of each student and organize an art exhibition as an extension to their creation and achievement. To widen their horizon, we take them to art workshops and visits to historical places so that they can study structures, history, forms and designs. Our participation in art exhibitions and fairs have given us immense popularity and appreciation with media coverage. People, artists, visitors from all over exchange ideas and mediums, which help these children to understand the art world. We arrange workshops, visits and educational tours to widen their horizon. We are looking forward to tying up the companies and NGO who provide professional training to visually impaired so that they can enhance their skills to get employment. Making them look straight in the Eye.",
+        },
+        {
+          heading: "",
+          content:
+            "Our participation in art exhibitions and fairs have given us immense popularity and appreciation with media coverage. People, artists, visitors from all over exchange ideas and mediums, which help these children to understand the art world. We arrange workshops, visits and educational tours to widen their horizon. We are looking forward to tying up the companies and NGO who provide professional training to visually impaired so that they can enhance their skills to get employment. Making them look straight in the Eye.",
+        },
+        {
+          heading: "",
+          content:
+            "Making them look straight in the Eye.",
+        },
       ],
       pointsContent: [
         {
@@ -175,9 +238,10 @@ export const data = [
         {
           heading: "",
           content:
-            "At Inside Me, we are always looking for enthusiastic and passionate people from all walks of life to give their time and energy to our budding talents. We currently teach drawing at IFB, Amar Colony, Lajpat Nagar and Janta Adarsh Andh Vidyalaya, Sadiq Nagar. Write to us at insidemearts@gmail.com to become a part of our initiative. ",
+            "Contact us with your ideas, suggestion, help and grant.",
         },
-        { heading: "", content: "" },
+        { heading: "", content: "insidemearts@gmail.com" },
+        { heading: "", content: "90, Narmada Apartments, Alaknanda, New Delhi 110019, India" },
       ],
       pointsContent: [
         {

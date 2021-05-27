@@ -7,14 +7,14 @@ import ImageSection from "./components/ImageSection.js";
 // import Feed from "react-instagram-authless-feed";
 import Gallery from "react-grid-gallery";
 import { data } from "./data";
-import { photosMedia } from "./components/photosMedia";
+import { photosGallery } from "./components/photosGallery";
 import { latestPhotos } from "./components/latestPhotos";
 // import { ErrorBoundary } from "react-error-boundary";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
 import Footer from "./components/Footer";
-import Test from "./components/Test";
+import News from "./components/News";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
@@ -43,11 +43,11 @@ function App() {
           <Route path="/initiative">
             <Initiative />
           </Route>
-          <Route path="/gallery">
-            <Test />
+          <Route path="/news">
+            <News />
           </Route>
-          <Route path="/media">
-            <Media />
+          <Route path="/gallery">
+            <MediaGallery />
           </Route>
           <Route path="/donate">
             <Donate />
@@ -233,15 +233,15 @@ function Initiative() {
   );
 }
 
-function Media() {
+function MediaGallery() {
   return (
     <>
       <Fade up distance="20%" duration={1000} delay={300}>
-        <h2 className="sectionHeading">Media</h2>
+        <h2 className="sectionHeading">Gallery</h2>
       </Fade>
-      <div className="MediaSection">
+      <div className="GallerySection">
         <Gallery
-          images={photosMedia}
+          images={photosGallery}
           enableLightbox={true}
           rowHeight={360}
           margin={4}

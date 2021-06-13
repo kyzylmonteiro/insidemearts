@@ -281,22 +281,27 @@ function Initiative() {
   return (
     <div className="initiative">
       <div style={{ height: "80vh", display: "flex", width: "0%" }}>
-        <video
-          loop
-          autoPlay
-          style={{
-            position: "absolute",
-            height: "80vh",
-            width: "100%",
-            objectFit: "cover",
-            right: "0%",
-            zIndex: "0",
-            opacity: "0.4",
-          }}
-        >
-          <source src="Videos/im1.mp4" type="video/mp4"></source>
-        </video>
+      <div style={{
+          position: "absolute",
+          // height: "80vh",
+          width: "100%",
+          objectFit: "cover",
+          right: "0%",
+          zIndex: "0",
+          opacity: "0.4",
+          // background: "linear-gradient(to left, lime 25%, red 25%, red 50%, cyan 50%, cyan 75%, yellow 75% )",
+          webkitMask: "linear-gradient(to top, rgb(256,256,256,0.2),0%,rgb(256,256,256,0),40%,rgb(256,256,256,0.5),80%,rgb(256,256,256,0))",
+          mask:"linear-gradient(#fff,transparent)",
+        }}>
+      <video
+        loop
+        autoPlay
+        style={{width:"100%"}}
+      >
+        <source src="Videos/im1.mp4" type="video/mp4"></source>
+      </video>
       </div>
+    </div>
       {pageContent &&
           pageContent.map((post, index) => (
       <Row className="section" id="details">
@@ -368,21 +373,75 @@ function Donate() {
       .then((data) => setPageContent(data))
       .catch(console.error);
   }, []);
+
+  const [pageGallery, setPageGallery] = useState(null);
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "helpUsPage"]{
+          gallery[]{caption,"src":image.asset->url,"thumbnail":image.asset->url,"thumbnailWidth":width, "thumbnailHeight":height}
+        }`
+      )
+      .then((data) => setPageGallery(data))
+      .catch(console.error);
+  }, []);
+
+
   return (
     <div>
-      <div className="sectionOne">
-      {pageContent &&
-          pageContent.map((post, index) => (
-      <Row className="section" id="details">
-        <ImageSection
-          imagesrc={post.section.image}
-          heading={post.section.title}
-          content={post.section.body}
-        />
-      </Row>
-      ))}
+    <div className="initiative">
+    <div style={{ height: "80vh", display: "flex", width: "0%" }}>
+      <div style={{
+          position: "absolute",
+          // height: "80vh",
+          width: "100%",
+          objectFit: "cover",
+          right: "0%",
+          zIndex: "0",
+          opacity: "0.4",
+          // background: "linear-gradient(to left, lime 25%, red 25%, red 50%, cyan 50%, cyan 75%, yellow 75% )",
+          webkitMask: "linear-gradient(to top, rgb(256,256,256,0.2),0%,rgb(256,256,256,0),40%,rgb(256,256,256,0.5),80%,rgb(256,256,256,0))",
+          mask:"linear-gradient(#fff,transparent)",
+        }}>
+      <video
+        loop
+        autoPlay
+        style={{width:"100%"}}
+      >
+        <source src="Videos/im1.mp4" type="video/mp4"></source>
+      </video>
       </div>
     </div>
+    {pageContent &&
+        pageContent.map((post, index) => (
+    <Row className="section" id="details">
+      <ImageSection
+        imagesrc={post.section.image}
+        heading={post.section.title}
+        content={post.section.body}
+      />
+    </Row>
+    ))}
+    </div>
+    <div className="GallerySection">
+
+    {pageGallery &&
+        pageGallery.map((post, index) => (
+          <Gallery
+        images={post.gallery}
+        enableLightbox={true}
+        rowHeight={360}
+        margin={4}
+        enableImageSelection={false}
+        // maxRows={3}
+        backdropClosesModal
+        // currentImage={3}
+        // isOpen={ true}
+      />
+    ))}
+      
+    </div>
+  </div>
   );
 }
 
@@ -438,9 +497,46 @@ function Volunteer() {
       .then((data) => setPageContent(data))
       .catch(console.error);
   }, []);
+
+
+  const [pageGallery, setPageGallery] = useState(null);
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "joinUsPage"]{
+          gallery[]{caption,"src":image.asset->url,"thumbnail":image.asset->url,"thumbnailWidth":width, "thumbnailHeight":height}
+        }`
+      )
+      .then((data) => setPageGallery(data))
+      .catch(console.error);
+  }, []);
+
+
   return (
-    <div>
-      <div className="sectionOne">
+    <div >
+    <div className="initiative">
+      <div style={{ height: "80vh", display: "flex", width: "0%" }}>
+      <div style={{
+          position: "absolute",
+          // height: "80vh",
+          width: "100%",
+          objectFit: "cover",
+          right: "0%",
+          zIndex: "0",
+          opacity: "0.4",
+          // background: "linear-gradient(to left, lime 25%, red 25%, red 50%, cyan 50%, cyan 75%, yellow 75% )",
+          webkitMask: "linear-gradient(to top, rgb(256,256,256,0.2),0%,rgb(256,256,256,0),40%,rgb(256,256,256,0.5),80%,rgb(256,256,256,0))",
+          mask:"linear-gradient(#fff,transparent)",
+        }}>
+      <video
+        loop
+        autoPlay
+        style={{width:"100%"}}
+      >
+        <source src="Videos/im1.mp4" type="video/mp4"></source>
+      </video>
+      </div>
+    </div>
       {pageContent &&
           pageContent.map((post, index) => (
       <Row className="section" id="details">
@@ -451,6 +547,24 @@ function Volunteer() {
         />
       </Row>
       ))}
+    </div>
+      <div className="GallerySection">
+
+      {pageGallery &&
+          pageGallery.map((post, index) => (
+            <Gallery
+          images={post.gallery}
+          enableLightbox={true}
+          rowHeight={360}
+          margin={4}
+          enableImageSelection={false}
+          // maxRows={3}
+          backdropClosesModal
+          // currentImage={3}
+          // isOpen={ true}
+        />
+      ))}
+        
       </div>
     </div>
   );

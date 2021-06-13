@@ -199,6 +199,16 @@ h2{
   align-items: center;
 }
 
+.gradient {
+  background-image: radial-gradient( circle at 36% 48%, #000000, rgba(11, 39, 65, 0.32) 87%, rgba(0, 0, 0, 0.0));
+  width: 100%;
+  height: calc(100vh - 80px);
+  min-height: 600px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
 @media screen and (max-width: 1000px) {
   .navBar {
     padding-top: 2vh;
@@ -256,3 +266,4 @@ h2{
     height: auto !important;
   }
 }
+

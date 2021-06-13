@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "react-bootstrap";
 import Header from "./components/Header.js";
@@ -17,6 +17,8 @@ import Footer from "./components/Footer";
 import News from "./components/News";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+
+import sanityClient from "./client.js";
 
 function App() {
   return (
@@ -74,16 +76,46 @@ function App() {
 function Home() {
   const audio = useRef(null);
 
+  const [pageContent, setPageContent] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "homePage"]{
+          title,
+          section{
+            title,body,
+            "image":sideImage.asset->url
+          }
+        }`
+      )
+      .then((data) => setPageContent(data))
+      .catch(console.error);
+  }, []);
+
+
   const [mute, setMute] = useState(true);
   const handlePlayAudio = () => {
     audio.current.play();
     setMute(!mute);
-  }
+  };
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       {mute ? "Listen to Sanjay telling us about his dream." : "Mute"}
     </Tooltip>
   );
+
+  const [pageGallery, setPageGallery] = useState(null);
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "homePage"]{
+          gallery[]{caption,"src":image.asset->url,"thumbnail":image.asset->url,"thumbnailWidth":width, "thumbnailHeight":height}
+        }`
+      )
+      .then((data) => setPageGallery(data))
+      .catch(console.error);
+  }, []);
 
   return (
     <div>
@@ -92,7 +124,7 @@ function Home() {
           // loop
           // autoPlay
           muted={mute}
-          ref= {audio}
+          ref={audio}
           style={{
             position: "absolute",
             height: "80%",
@@ -174,29 +206,52 @@ function Home() {
         </video>
       </Row>
 
+
+
+           {pageContent &&
+          pageContent.map((post, index) => (
       <Row className="section" id="details">
         <ImageSection
-          imagesrc={data[0].image}
-          heading={data[0].heading}
-          content={data[0].content}
+          imagesrc={post.section.image}
+          heading={post.section.title}
+          content={post.section.body}
         />
       </Row>
+      ))}
       <Row
         className="section"
         style={{ height: "auto", marginTop: "15%", paddingBottom: "20vh" }}
       >
         {/* <Fade up distance="20%" duration={1000}> */}
-          <Gallery
-            images={latestPhotos}
-            enableLightbox={true}
-            rowHeight={360}
-            margin={4}
-            enableImageSelection={false}
-            // maxRows={3}
-            backdropClosesModal
-            // currentImage={3}
-            // isOpen={ true}
-          />
+        {/* <Gallery
+          images={latestPhotos}
+          enableLightbox={true}
+          rowHeight={360}
+          margin={4}
+          enableImageSelection={false}
+          // maxRows={3}
+          backdropClosesModal
+          // currentImage={3}
+          // isOpen={ true}
+        /> */}
+
+        {pageGallery &&
+          pageGallery.map((post, index) => (
+            <Gallery
+          images={post.gallery}
+          enableLightbox={true}
+          rowHeight={360}
+          margin={4}
+          enableImageSelection={false}
+          // maxRows={3}
+          backdropClosesModal
+          // currentImage={3}
+          // isOpen={ true}
+        />
+      ))}
+
+
+
         {/* </Fade> */}
       </Row>
     </div>
@@ -205,9 +260,27 @@ function Home() {
 // https://github.com/kyzylmonteiro/ninjaJ2W/blob/efd63cf81152518a1036320bbb375fde7e5620f5/src/CardSection.js#L90
 
 function Initiative() {
+  
+  const [pageContent, setPageContent] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "ourInitiativePage"]{
+          title,
+          section{
+            title,body,
+            "image":sideImage.asset->url
+          }
+        }`
+      )
+      .then((data) => setPageContent(data))
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="initiative">
-      <div style={{"height": "80vh", "display": "flex", "width": "0%"}}>
+      <div style={{ height: "80vh", display: "flex", width: "0%" }}>
         <video
           loop
           autoPlay
@@ -224,24 +297,44 @@ function Initiative() {
           <source src="Videos/im1.mp4" type="video/mp4"></source>
         </video>
       </div>
+      {pageContent &&
+          pageContent.map((post, index) => (
+      <Row className="section" id="details">
         <ImageSection
-          imagesrc={data[1].image}
-          heading={data[1].heading}
-          content={data[1].content}
+          imagesrc={post.section.image}
+          heading={post.section.title}
+          content={post.section.body}
         />
+      </Row>
+      ))}
     </div>
   );
 }
 
 function MediaGallery() {
+  const [pageGallery, setPageGallery] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "galleryPage"]{
+          gallery[]{caption,"src":image.asset->url,"thumbnail":image.asset->url,"thumbnailWidth":width, "thumbnailHeight":height}
+        }`
+      )
+      .then((data) => setPageGallery(data))
+      .catch(console.error);
+  }, []);
   return (
     <>
       <Fade up distance="20%" duration={1000} delay={300}>
         <h2 className="sectionHeading">Gallery</h2>
       </Fade>
       <div className="GallerySection">
-        <Gallery
-          images={photosGallery}
+
+      {pageGallery &&
+          pageGallery.map((post, index) => (
+            <Gallery
+          images={post.gallery}
           enableLightbox={true}
           rowHeight={360}
           margin={4}
@@ -251,48 +344,113 @@ function MediaGallery() {
           // currentImage={3}
           // isOpen={ true}
         />
+      ))}
+        
       </div>
     </>
   );
 }
 
 function Donate() {
+  const [pageContent, setPageContent] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "helpUsPage"]{
+          title,
+          section{
+            title,body,
+            "image":sideImage.asset->url
+          }
+        }`
+      )
+      .then((data) => setPageContent(data))
+      .catch(console.error);
+  }, []);
   return (
     <div>
       <div className="sectionOne">
+      {pageContent &&
+          pageContent.map((post, index) => (
+      <Row className="section" id="details">
         <ImageSection
-          imagesrc={data[2].image}
-          heading={data[2].heading}
-          content={data[2].content}
+          imagesrc={post.section.image}
+          heading={post.section.title}
+          content={post.section.body}
         />
+      </Row>
+      ))}
       </div>
     </div>
   );
 }
 
 function Contact() {
+  const [pageContent, setPageContent] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "contactUsPage"]{
+          title,
+          section{
+            title,body,
+            "image":sideImage.asset->url
+          }
+        }`
+      )
+      .then((data) => setPageContent(data))
+      .catch(console.error);
+  }, []);
   return (
     <div>
       <div className="sectionOne">
+      {pageContent &&
+          pageContent.map((post, index) => (
+      <Row className="section" id="details">
         <ImageSection
-          imagesrc={data[4].image}
-          heading={data[4].heading}
-          content={data[4].content}
+          imagesrc={post.section.image}
+          heading={post.section.title}
+          content={post.section.body}
         />
+      </Row>
+      ))}
       </div>
     </div>
   );
 }
 
 function Volunteer() {
+  const [pageContent, setPageContent] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "joinUsPage"]{
+          title,
+          section{
+            title,body,
+            "image":sideImage.asset->url
+          }
+        }`
+      )
+      .then((data) => setPageContent(data))
+      .catch(console.error);
+  }, []);
   return (
     <div>
       <div className="sectionOne">
+      {pageContent &&
+          pageContent.map((post, index) => (
+      <Row className="section" id="details">
         <ImageSection
-          imagesrc={data[3].image}
-          heading={data[3].heading}
-          content={data[3].content}
+          imagesrc={post.section.image}
+          heading={post.section.title}
+          content={post.section.body}
         />
+      </Row>
+      ))}
       </div>
     </div>
   );

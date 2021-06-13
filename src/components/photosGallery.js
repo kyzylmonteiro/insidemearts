@@ -9,11 +9,11 @@ export const photosGallery = [
      
   },
   {
-    src: "Photos/17.jpg",
-    thumbnail: "Photos/17.jpg",
+    "src": "Photos/17.jpg",
+    "thumbnail": "Photos/17.jpg",
     thumbnailWidth: 720,
     thumbnailHeight: 960,
-    caption: "Caption of image",
+    "caption": "Caption of image",
      
   },
 

@@ -2,10 +2,21 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Fade from "react-reveal/Fade";
+import BlockContent from "@sanity/block-content-to-react";
+
+// const serializers = {
+//   types: {
+//     code: (props) => (
+//       <pre data-language={props.node.language}>
+//         <code>{props.node.code}</code>
+//       </pre>
+//     ),
+//   },
+// }
 
 const ImageSection = (props) => {
   return (
-    <div style={{"overflow": "auto"}}>
+    <div >
       <div
         className="ImageSectionHeading"
         style={{ paddingTop: "10%", paddingBottom: "50px" }}
@@ -22,7 +33,7 @@ const ImageSection = (props) => {
               {props.content}
             </p> */}
 
-            {props.content.para.map((item) => {
+            {/* {props.content.para.map((item) => {
               return (
                 <div>
                   {item.heading !== "" && <h3 style={{paddingTop:"2vh"}}>{item.heading}</h3>}
@@ -34,9 +45,12 @@ const ImageSection = (props) => {
                   </p>
                 </div>
               );
-            })}
-
-            {props.content.pointsContent.map((pt) => (
+            })} */}
+            <div className="sectionContent fontSection"
+                    style={{ textAlign: "justify", textJustify: "inter-word",whiteSpace: "pre-line" }} >
+            <BlockContent  blocks={props.content} serializers={{hardBreak:false}} hardBreak={{}} imageOptions={{w: "350"}} projectId="6zdwq6tr" dataset="production"/>
+            </div>
+            {/* {props.content.pointsContent.map((pt) => (
               <div>
                 {pt.heading !== "" && <h4 style={{paddingTop:"2vh"}}>{pt.heading}</h4>}
                 {pt.points[0] !== "" && (
@@ -47,12 +61,12 @@ const ImageSection = (props) => {
                   </ul>
                 )}
               </div>
-            ))}
+            ))} */}
           </Fade>
           {/* </Col>
         <Col className="justify-content-center" md={4}> */}
         </div>
-        {props.imagesrc !== "" && (
+        {props.imagesrc && (
           <div className="imageSpacerImageSection">
             <Fade
               up

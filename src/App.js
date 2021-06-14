@@ -279,7 +279,7 @@ function Initiative() {
   }, []);
 
   return (
-    <div className="initiative">
+    <div className="videoBg">
       <div style={{ height: "80vh", display: "flex", width: "0%" }}>
       <div style={{
           position: "absolute",
@@ -389,7 +389,7 @@ function Donate() {
 
   return (
     <div>
-    <div className="initiative">
+    <div className="videoBg">
     <div style={{ height: "80vh", display: "flex", width: "0%" }}>
       <div style={{
           position: "absolute",
@@ -408,7 +408,7 @@ function Donate() {
         autoPlay
         style={{width:"100%"}}
       >
-        <source src="Videos/im1.mp4" type="video/mp4"></source>
+        <source src="Videos/im2.mp4" type="video/mp4"></source>
       </video>
       </div>
     </div>
@@ -514,7 +514,7 @@ function Volunteer() {
 
   return (
     <div >
-    <div className="initiative">
+    <div className="videoBg">
       <div style={{ height: "80vh", display: "flex", width: "0%" }}>
       <div style={{
           position: "absolute",
@@ -533,7 +533,7 @@ function Volunteer() {
         autoPlay
         style={{width:"100%"}}
       >
-        <source src="Videos/im1.mp4" type="video/mp4"></source>
+        <source src="Videos/im3.mp4" type="video/mp4"></source>
       </video>
       </div>
     </div>

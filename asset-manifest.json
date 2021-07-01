@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbb22b02.chunk.css",
-    "main.js": "/static/js/main.15fa9e99.chunk.js",
-    "main.js.map": "/static/js/main.15fa9e99.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d3d779ce.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d3d779ce.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.68227121.chunk.js": "/static/js/2.68227121.chunk.js",
-    "static/js/2.68227121.chunk.js.map": "/static/js/2.68227121.chunk.js.map",
-    "static/js/3.946bb96f.chunk.js": "/static/js/3.946bb96f.chunk.js",
-    "static/js/3.946bb96f.chunk.js.map": "/static/js/3.946bb96f.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.cbb22b02.chunk.css.map": "/static/css/main.cbb22b02.chunk.css.map",
-    "static/js/2.68227121.chunk.js.LICENSE.txt": "/static/js/2.68227121.chunk.js.LICENSE.txt"
+    "main.css": "/insidemearts/static/css/main.cbb22b02.chunk.css",
+    "main.js": "/insidemearts/static/js/main.ad6083b5.chunk.js",
+    "main.js.map": "/insidemearts/static/js/main.ad6083b5.chunk.js.map",
+    "runtime-main.js": "/insidemearts/static/js/runtime-main.cc865306.js",
+    "runtime-main.js.map": "/insidemearts/static/js/runtime-main.cc865306.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/insidemearts/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.68227121.chunk.js": "/insidemearts/static/js/2.68227121.chunk.js",
+    "static/js/2.68227121.chunk.js.map": "/insidemearts/static/js/2.68227121.chunk.js.map",
+    "static/js/3.946bb96f.chunk.js": "/insidemearts/static/js/3.946bb96f.chunk.js",
+    "static/js/3.946bb96f.chunk.js.map": "/insidemearts/static/js/3.946bb96f.chunk.js.map",
+    "index.html": "/insidemearts/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/insidemearts/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.cbb22b02.chunk.css.map": "/insidemearts/static/css/main.cbb22b02.chunk.css.map",
+    "static/js/2.68227121.chunk.js.LICENSE.txt": "/insidemearts/static/js/2.68227121.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3d779ce.js",
+    "static/js/runtime-main.cc865306.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.68227121.chunk.js",
     "static/css/main.cbb22b02.chunk.css",
-    "static/js/main.15fa9e99.chunk.js"
+    "static/js/main.ad6083b5.chunk.js"
   ]
 }
